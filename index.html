@@ -11,11 +11,11 @@
   <body>
     <!-- шапка -->
     <header  class="page-header">
-      <div class="container">
-        <nav>
+      <div class="container header-container">
+        <nav class="main-nav">
           <a href="./index.html" class="logo"> <span class="logo-web">Web</span> <span class="logo-studio">Studio</span></a>
           <ul class="site-nav list">
-            <li class="item"><a href="" class="link current">Студия</a></li>
+            <li class="item"><a href="" class="link current studio">Студия</a></li>
             <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
@@ -43,9 +43,9 @@
       </div>
       <!-- отличительные особенности-->
       <section>
-       <div class="container">
+       <div class="container ">
         <h2>заголовок, который потом скроем</h2>
-        <ul class="list">
+        <ul class="list main-advantegies">
           <li>
             <!-- <img src="./images/Rectangle.svg" alt="" width="278" /> -->
             <img src="./images/radar.svg" alt="radar" class="advantegies"/>
@@ -91,28 +91,28 @@
         <h2 class="section-title-team">Чем мы занимаемся</h2>
         <ul class="list">
           <li>
-            <h3 class="section-hero-variants">Десктопные приложения</h3>
             <img
               src="./images/app.svg"
               alt="desctop applications"
               width="380"
             />
+            <h3 class="section-hero-variants">Десктопные приложения</h3>
           </li>
           <li>
+           <img src="./images/box.svg" alt="mobile applications" width="380" />
             <h3 class="section-hero-variants">Мобильные приложения</h3>
-            <img src="./images/box.svg" alt="mobile applications" width="380" />
           </li>
           <li>
-            <h3 class="section-hero-variants">Дизайнерские решения</h3>
             <img src="./images/mac.svg" alt="design" width="380" />
+            <h3 class="section-hero-variants">Дизайнерские решения</h3>
           </li>
         </ul>
        </div>
       </section>
       <!--наша команда-->
-      <section class="our-team">
+      <section class="container our-team">
         <h2 class="section-title-team">Наша команда</h2>
-        <div class="container">
+        <!-- <div class="container">
           <img src="./images/John-Smith.svg" alt="photo" width="278" class="team-photo"/>
         <div class="team-name">
           <h3 class="team">John Smith</h3>
@@ -139,8 +139,117 @@
             /></a>
           </li>
         </div>
+        </ul> -->
+        <ul class="team-members">
+          <li class="team-name">
+            <img src="./images/John-Smith.svg" alt="photo" width="278" class="team-photo"/>
+            <h3 class="team">John Smith</h3>
+        <p class="team-job">Product Designer</p>
+        <ul class="list">
+          <li>
+            <a href="https://www.instagram.com/">
+              <img src="./images/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"
+              ><img src="./images/twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><img src="./images/facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/"
+              ><img src="./images/linkedin.svg" alt="linkedin"
+            /></a>
+          </li>
         </ul>
-        <img src="./images/Marta-Stewart.svg" alt="photo" width="278" />
+          </li>
+         <li class="team-name">
+            <img src="./images/Marta-Stewart.svg" alt="photo" width="278" />
+            <h3 class="team">Marta Stewart</h3>
+            <p class="team-job">Frontend Developer</p>
+            <ul class="list">
+              <li>
+                <a href="https://www.instagram.com/">
+                  <img src="./images/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/"
+                  ><img src="./images/twitter.svg" alt="twitter"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/"
+                  ><img src="./images/facebook.svg" alt="facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/"
+                  ><img src="./images/linkedin.svg" alt="linkedin"
+                /></a>
+              </li>
+            </ul>
+          </li>
+          <li class="team-name">
+            <img src="./images/Robert-Jakis.svg" alt="photo" width="278" />
+            <h3 class="team">Robert Jakis</h3>
+        <p class="team-job">Marketing</p>
+        <ul class="list">
+          <li>
+            <a href="https://www.instagram.com/">
+              <img src="./images/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"
+              ><img src="./images/twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><img src="./images/facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li><a href="https://www.linkedin.com/"
+            ><img src="./images/linkedin.svg" alt="linkedin"
+          /></a>
+        </li>
+      </ul>
+          </li>
+          <li class="team-name">
+            <img src="./images/Martin-Doe.svg" alt="photo" width="278" />
+            <h3 class="team">Martin Doe</h3>
+        <p class="team-job">UI Designer</p>
+        <ul class="list">
+          <li>
+            <a href="https://www.instagram.com/">
+              <img src="./images/instagram.svg" alt="instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/"
+              ><img src="./images/twitter.svg" alt="twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/"
+              ><img src="./images/facebook.svg" alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/"
+              ><img src="./images/linkedin.svg" alt="linkedin"
+            /></a>
+          </li>
+        </ul>
+          </li>
+        </ul>
+        <!-- <img src="./images/Marta-Stewart.svg" alt="photo" width="278" />
         <div class="team-name">
           <h3 class="team">Marta Stewart</h3>
         <p class="team-job">Frontend Developer</p>
@@ -166,9 +275,9 @@
             /></a>
           </li>
         </ul>
-        </div>
-        <img src="./images/Robert-Jakis.svg" alt="photo" width="278" />
-        <div class="team-name">
+        </div> -->
+        <!-- <img src="./images/Robert-Jakis.svg" alt="photo" width="278" /> -->
+        <!-- <div class="team-name">
           <h3 class="team">Robert Jakis</h3>
         <p class="team-job">Marketing</p>
         <ul class="list">
@@ -193,9 +302,9 @@
         </li>
       </ul>
 
-        </div>
+        </div> -->
             
-        <img src="./images/Martin-Doe.svg" alt="photo" width="278" />
+        <!-- <img src="./images/Martin-Doe.svg" alt="photo" width="278" />
         <div class="team-name">
           <h3 class="team">Martin Doe</h3>
         <p class="team-job">UI Designer</p>
@@ -221,32 +330,32 @@
             /></a>
           </li>
         </ul>
-        </div>
+        </div> -->
         </div>
        
       </section>
       <!--Постоянные клиенты-->
       <section>
-        <div class="container">
+        <div class="container clients">
           <h1 class="section-title-team">Постоянные клиенты</h1>
         <ul class="list">
           <li>
-            <a href=""><img src="./images/logo1.svg" alt="company 1" /></a>
+            <a href=""><img src="./images/logo1.svg" alt="company 1" class="company-1"/></a>
           </li>
           <li>
-            <a href=""><img src="./images/logo2.svg" alt="company 2" /></a>
+            <a href=""><img src="./images/logo2.svg" alt="company 2" class="company-2"/></a>
           </li>
           <li>
-            <a href=""><img src="./images/logo3.svg" alt="company 3" /></a>
+            <a href=""><img src="./images/logo3.svg" alt="company 3" class="company-3"/></a>
           </li>
           <li>
-            <a href=""><img src="./images/logo4.svg" alt="company 4" /></a>
+            <a href=""><img src="./images/logo4.svg" alt="company 4" class="company-4"/></a>
           </li>
           <li>
-            <a href=""><img src="./images/logo5.svg" alt="company 5" /></a>
+            <a href=""><img src="./images/logo5.svg" alt="company 5" class="company-5"/></a>
           </li>
           <li>
-            <a href=""><img src="./images/logo6.svg" alt="company 6" /></a>
+            <a href=""><img src="./images/logo6.svg" alt="company 6" class="company-6"/></a>
           </li>
         </ul>
         </div>
