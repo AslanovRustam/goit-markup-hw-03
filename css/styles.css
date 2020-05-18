@@ -21,7 +21,7 @@ body {
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -127,7 +127,7 @@ color: var(--secondary-text-color);
     margin: 0;
     padding: 0;
     margin-left: auto;
-
+    
     font-weight: 500;
     /* font-size: 14px; */
     line-height: 1.14;
@@ -137,9 +137,13 @@ color: var(--secondary-text-color);
 .list.list-nav .list-link + .list-link{
     margin-left: 50px;
 }
+.list-nav.img{
+    display: flex;
+}
 .list-link {
     color: var(--primary-text-color);
     text-decoration: none;
+    margin-left: 10px;
 }
 .list.list-nav li:not(:first-child) {
     margin-left: 50px;
@@ -171,13 +175,15 @@ h2{
 }
 .section-hero-variants{
     display: inline-block;
-    padding: 27px 88px;
-    /* padding-bottom: 27px; */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 27px 82px;
     min-width: 370px;
+    
     background-color: var(--bg-variants);
     color: var(--white-text-color);
     font-weight: 700;
-    /* font-size: 14px; */
+    font-size: 14px;
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
@@ -220,24 +226,33 @@ h2{
 
 }
 .main-advantegies{
-    display: flex;    
+    display: flex; 
+}
+.advabtagies-item{
+    margin-right: 30px;
+    
 }
 .list .advantegies :not(:first-child){
     margin-left: 30px;
 }
-.list .advantegies{
+.advantegies{
     display: block;
-    padding: 25px 105px;
+    padding: 25px 100px;
     margin-bottom: 30px;
     border-radius: 4px;
-    min-width: 278px;
+    min-width: 270px;
+    min-height: 0.44;
     background-color: var(--our-team-bg-color);
+    outline: 1px solid red; 
 }
 .list img:hover, .list img:focus{
     background-color: var(--accent-color);
 }
 .list .section-title{
     margin-bottom: 10px;
+}
+.our-works:not(:last-child){
+    margin-right: 30px;
 }
 .section-title-hero{
     color: var(--secondary-text-color)
@@ -272,9 +287,9 @@ h2{
     padding-bottom: 94px;
 }
 
-/* .team-photo{
+.team-photo{
     margin-bottom: 30px;
-} */
+}
 .team-members{
     display: flex;
     justify-content: space-between;
@@ -285,11 +300,16 @@ h2{
 .team-name .list{
     display: flex;
     justify-content: space-evenly;
+    /* padding-left: 0; */
+    /* padding-top: 30px; */
+    padding-bottom: 24px;
+    padding-left: 31px;
+    padding-right: 31px;
 }
 .team{
     margin-top: 0;
     margin-bottom: 10px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -316,9 +336,9 @@ h2{
     /* or 171% */
     letter-spacing: 0.03em;
 }
-.team-name > .list{
+/* .team-name > .list{
     padding-left: 0;
-}
+} */
 .container > .list{
     display: flex;
     justify-content: space-between;
@@ -328,26 +348,36 @@ h2{
     box-sizing: border-box;
     border-radius: 4px;
 }
+
+
 .company-1{
     padding: 21px 65px;
+    max-width: 170px;
 }
 .company-2{
     padding: 19px 67px;
+    max-width: 170px;
 }
 .company-3{
     padding: 24px 71px 24px 63px;
+    max-width: 170px;
 }
 .company-4{
     padding: 25px 46px;
+    max-width: 170px;
 }
 .company-5{
     padding: 22px 58px;
+    max-width: 170px;
 }
 .company-6{
     padding: 23px 43px;
+    max-width: 170px;
 }
 footer{
     background-color: var(--footer-bg-color);
+   
+    
 }
 .logo-studio.footer{
     color: var(--white-text-color);
@@ -363,6 +393,7 @@ footer{
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    font-style: bold;
 }
 .footer-tittle{
     margin-bottom: 21px;
