@@ -43,19 +43,21 @@ section{
     padding-top: 94px;
     padding-bottom: 94px;
 } 
+
 .main-nav{
     display: flex;
     align-items: center;
     /* justify-content: start; */
     
 }
-.link.current.studio{
+/* .link.current.studio{
     margin-left: 86px;
-}
+} */
 .logo-web {
     text-decoration: none;
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height:1.19;
@@ -78,6 +80,7 @@ color: var(--secondary-text-color);
 .logo {
     color: var(--secondary-text-color);
     font-family: Raleway, sans-serif;
+    margin-right: 86px;
 }
 .logo:hover, .logo:focus {
     color: var(--accent-color) 
@@ -88,6 +91,7 @@ color: var(--secondary-text-color);
     
 }.site-nav{
     display: flex;
+    padding: 0;
 }
 /* .site-nav .item{
     margin-right: 50px;
@@ -226,7 +230,8 @@ h2{
 
 }
 .main-advantegies{
-    display: flex; 
+    display: flex;
+    padding: 0;
 }
 .advabtagies-item{
     margin-right: 30px;
@@ -293,8 +298,9 @@ h2{
 .team-members{
     display: flex;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     
 }
 .team-name .list{
@@ -349,7 +355,9 @@ h2{
     border-radius: 4px;
 }
 
-
+.permanent-clients{
+    padding: 0;
+}
 .company-1{
     padding: 21px 65px;
     max-width: 170px;
@@ -374,13 +382,15 @@ h2{
     padding: 23px 43px;
     max-width: 170px;
 }
-footer{
-    background-color: var(--footer-bg-color);
-   
-    
+.container-footer{
+    background-color: var(--footer-bg-color);    
+}
+.footer{
+    display: flex;
 }
 .logo-studio.footer{
     color: var(--white-text-color);
+    font-style: normal;
 }
 .footer-logo{
     margin-bottom: 10px;
@@ -389,6 +399,7 @@ footer{
     margin-bottom: 9px;
     color: var(--white-text-color);
     font-weight: 700;
+    font-style: normal;
     /* font-size: 14px; */
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -408,6 +419,7 @@ footer{
     color:rgba(255, 255, 255, 0.6) ;
     /* font-weight: 400; */
     /* font-size: 14px; */
+    font-style: normal;
     line-height: 1.71;
     /* or 171% */
     letter-spacing: 0.03em;
@@ -488,7 +500,15 @@ footer{
     /* or 156% */
     letter-spacing: 0.03em;
 }
-.list-portfolio img{
-    min-width: 380px;
+.list-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    max-width: 370px;
     margin-bottom: 20px;
+    margin-right: 30px;
+}
+.item:nth-child(3n){
+    margin-right: 0px;
 }
